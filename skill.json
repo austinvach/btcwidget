@@ -1,0 +1,79 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sample Short Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Bit Bot",
+          "description": "Sample Full Description",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "BUSINESS_AND_FINANCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:427228140338:function:dea26132-6b6e-4c07-9649-7d7c687aa5c2:Release_0"
+        },
+        "interfaces": [
+          {
+            "packages": [
+              {
+                "id": "price"
+              }
+            ],
+            "type": "ALEXA_DATASTORE_PACKAGEMANAGER"
+          },
+          {
+            "type": "ALEXA_DATA_STORE"
+          },
+          {
+            "requestedExtensions": [
+              {
+                "uri": "alexaext:datastore:10"
+              }
+            ],
+            "type": "ALEXA_EXTENSION"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:427228140338:function:dea26132-6b6e-4c07-9649-7d7c687aa5c2:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:427228140338:function:dea26132-6b6e-4c07-9649-7d7c687aa5c2:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:427228140338:function:dea26132-6b6e-4c07-9649-7d7c687aa5c2:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      }
+    }
+  }
+}
